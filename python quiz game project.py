@@ -33,9 +33,20 @@ for i in questions:
         score=score+1
         print("your score is ",score)
     else:
-        print("your answer is wrong and u lost 1 mark")
-        score=score-1
-        print("your score is ",score)
+        print("your answer is wrong and wait for next chance")
+        flag3=input("enter another option")
+        if flag3==questions[i]:
+            print("you said correct answer")
+            score=score+1
+        if:
+            flag4=input("enter another option")
+            if flag4==questions[i]:
+                print("your answer is correct")
+                score=score+1
+                print("your score is ",score)
+            else:
+                print("wrong answer ")
+                score=score-1
     flag2=input("do you want to quit the game(yes/no)")
     if flag2=="yes":
         break
